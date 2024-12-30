@@ -61,14 +61,14 @@ done
 if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
-
+  
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libsample5.so)
-            "${PATCHELF}" --replace-needed "libsample6.so" "libsample7.so" "${2}"
+        vendor/lib/libsec-ril.so)
+            "${PATCHELF}" --add-needed "libshims_ril.so" "${2}"
             ;;
-        vendor/lib/libsample7.so)
-            "${PATCHELF}" --set-soname "libsample7.so" "${2}"
+        vendor/lib/libsec-ril-dsds.so)
+            "${PATCHELF}" --add-needed "libshims_ril.so" "${2}"
             ;;
     esac
 }

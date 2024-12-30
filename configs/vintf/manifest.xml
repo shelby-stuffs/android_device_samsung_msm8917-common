@@ -142,14 +142,12 @@
     <hal format="hidl">
         <name>android.hardware.health</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>2.1</version>
         <interface>
             <name>IHealth</name>
             <instance>default</instance>
-            <instance>exthealth</instance>
         </interface>
-        <fqname>@2.0::IHealth/default</fqname>
-        <fqname>@2.0::IHealth/exthealth</fqname>
+        <fqname>@2.1::IHealth/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
@@ -642,16 +640,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::ISehGnss/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.health</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehHealth</name>
-            <instance>sehhealth</instance>
-        </interface>
-        <fqname>@1.0::ISehHealth/sehhealth</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.light</name>

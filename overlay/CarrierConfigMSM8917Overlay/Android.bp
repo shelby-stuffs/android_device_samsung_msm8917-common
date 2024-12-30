@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    aaptflags: ["--keep-raw-values"],
+    name: "CarrierConfigMSM8917Overlay",
+    product_specific: true,
+}

@@ -13,13 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-    
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -197,7 +190,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_msm8917/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_msm8917/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_msm8917/com.nxp.mifare.xml    
-    
+
+# Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigMSM8917Overlay \
+    FrameworksMSM8917Overlay \
+    SystemUIMSM8917Overlay
+
 # OMX
 PRODUCT_PACKAGES += \
     libmm-omxcore \

@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "FrameworksMSM8917Overlay",
+    vendor: true,
+}

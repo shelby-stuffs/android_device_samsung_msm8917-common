@@ -856,7 +856,6 @@ vendor/firmware/wlan
 vendor/firmware/wlan/prima
 vendor/firmware/wlan/prima/grippower.info
 vendor/firmware/wlan/prima/WCNSS_cfg.dat
-vendor/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
 

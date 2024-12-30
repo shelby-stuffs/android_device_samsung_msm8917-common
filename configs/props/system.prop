@@ -1,0 +1,8 @@
+# Import EFS Properities
+# import /efs/factory.prop
+
+# Radio
+rild.libpath=/system/lib64/libsec-ril.so
+rild.libargs=-d /dev/umts_ipc0
+ro.telephony.default_network=9
+ro.multisim.simslotcount=2

@@ -19,8 +19,6 @@ BOARD_VENDOR := samsung
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv8-a
@@ -146,6 +144,10 @@ TARGET_PROVIDES_LIBLIGHT=true
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true

@@ -116,11 +116,11 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 TARGET_SEC_FP_HAL_VARIANT := bauth
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += msm8917NFC
 ODM_MANIFEST_MSM8917NFC_FILES := \
-    $(COMMON_PATH)/manifest-nfc.xml
+    $(COMMON_PATH)/configs/vintf/manifest-nfc.xml
 
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -134,7 +134,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
